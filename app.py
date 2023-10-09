@@ -9,12 +9,13 @@ def index():
 @app.route('/add', methods=['POST'])
 def add():
     try:
-        num1 = int(request.form['num1'])
-        num2 = int(request.form['num2'])
-        num3 = int(request.form['housing'])
-        num4 = int(request.form['credits'])
+        num1 = int(request.form['num1']) #financial aid section
+        num2 = int(request.form['num2']) #scholarship section
+        num3 = int(request.form['housing']) #housing section
+        num4 = int(request.form['credits']) #credits section
+        num5 = int(request.form['other']) #other section
        
-        result = num1 + num2 + num3+ num4
+        result = num1 + num2 + num3+ num4 + num5
 
         
         return redirect(url_for('result', result=result))

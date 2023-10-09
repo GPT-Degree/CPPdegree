@@ -11,10 +11,18 @@ def add():
     try:
         num1 = int(request.form['num1'])
         num2 = int(request.form['num2'])
-        result = num1 + num2
+        num3 = int(request.form['housing'])
+        num4 = int(request.form['credits'])
+       
+        result = num1 + num2 + num3+ num4
+
+        
         return redirect(url_for('result', result=result))
     except ValueError:
         return "Invalid input. Please enter valid numbers."
+
+
+    
 
 @app.route('/result/<result>')
 def result(result):

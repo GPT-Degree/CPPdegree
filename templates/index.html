@@ -9,13 +9,27 @@
    
     <div id="add">
       <form action="/add" method="POST">
-        <label for="num1">Number 1:</label>
+        <label for="num1">Financial aid:</label>
         <input type="text" id="num1" name="num1" /><br /><br />
-        <label for="num2">Number 2:</label>
+        <label for="num2">Scholarships: </label>
         <input type="text" id="num2" name="num2" /><br /><br />
-        <input type="submit" value="Add" />
-        
-      </form>
+        <input type="submit" value="Add" /> <br /><br />    
+ 
+  <label for="housing">Choose your housing</label>
+  <select name="housing" id="housing">
+  <option value="1000">On-campus (Dorms)</option>
+  <option value="500">Off-campus (Village)</option>
+  <option value="100">Off-campus (Apartment)</option>
+  <option value="0">N/A</option><br /><br />
+  </select><br /><br />
+<br /><br />
+  <label for="credits">How many units?</label>
+  <select name="credits" id="credits">
+  <option value="3000">Full-Time</option>
+  <option value="1500">Part-Time </option>
+
+</select>
+ </form>
     </div>
   </body>
 </html>

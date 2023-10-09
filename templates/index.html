@@ -5,8 +5,9 @@
     <link rel="stylesheet" href="/static/css/styles.css" />
   </head>
 
-    <h1 id="header">CPP Calculator</h1>
+    <h1 id="header">CPP Degree Calculator</h1>
    
+    <!-- values that we will subtract from cost -->
     <div id="add">
       <form action="/add" method="POST">
         <label for="num1">Financial aid:</label>
@@ -14,23 +15,24 @@
         <label for="num2">Scholarships: </label>
         <input type="text" id="num2" name="num2" /><br /><br />
         
-
+        <!-- housing section -->
   <label for="housing">Choose your housing</label>
   <select name="housing" id="housing">
-  <option value="1000">On-campus (Dorms)</option>
-  <option value="500">Off-campus (Village)</option>
-  <option value="100">Off-campus (Apartment)</option>
+  <option value="11000">On-campus (Dorms)</option>
+  <option value="12312">Off-campus (Village)</option>
+  <option value="12000">Off-campus (Apartment)</option>
   <option value="0">N/A</option><br /><br />
   </select><br /><br />
 
-
+ <!-- full time or part time -->
   <label for="credits">How many units?</label>
   <select name="credits" id="credits">
-  <option value="3000">Full-Time</option>
-  <option value="1500">Part-Time </option>
+  <option value="3720">Full-Time</option>
+  <option value="2792">Part-Time </option>
 </select>
 <br /><br /> 
 
+<!-- add button -->
 <input type="submit" value="Add" /> <br /><br />    
 
  </form>

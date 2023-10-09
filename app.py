@@ -13,9 +13,9 @@ def add():
         num2 = int(request.form['num2']) #scholarship section
         num3 = int(request.form['housing']) #housing section
         num4 = int(request.form['credits']) #credits section
-        num5 = int(request.form['other']) #other section
+        
        
-        result = num1 + num2 + num3+ num4 + num5
+        result = (num3+ num4) - (num1 + num2)
 
         
         return redirect(url_for('result', result=result))

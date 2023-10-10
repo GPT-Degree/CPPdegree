@@ -18,16 +18,16 @@ def add():
         result = (num3+ num4) - (num1 + num2)
 
         
-        return redirect(url_for('result', result=result))
+        return redirect(url_for('result', result=result, num3=num3, num4=num4))
     except ValueError:
         return "Invalid input. Please enter valid numbers."
 
 
     
 
-@app.route('/result/<result>')
-def result(result):
-    return render_template('result.html', result=result)
+@app.route('/result/<result>/<int:num3>/<int:num4>')
+def result(result, num3, num4):
+    return render_template('result.html', result=result, num3=num3, num4=num4)
 
 @app.route('/resources')
 def resources():

@@ -1,20 +1,26 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <link rel="stylesheet" href="/static/css/result.css" />
     <title>Result</title>
-    <style>
-      footer {
-      position: fixed;
-      bottom: 0;
-      }
-    </style>
+    
   </head>
   <body>
-    <h1>Result</h1>
-    <p>The result of the addition is: {{ result }}</p>
+    <div class="header">
+    <h3>Based on the information you have provided, 
+      the following calculations represent the average net price of attendance that students similar to 
+      you paid in the given year.</h3>
+    </div>
 
-    <a href="/">Back to Input</a>
+    <div class="container">
+    <p>The Total cost for one year is: <strong>${{ result }}</strong></p>
+    <p>The estimated cost for housing is: <strong>${{ num3 }}</strong></p>
+    <p>The estimated cost for tuition:  <strong>${{ num4 }}</strong></p>
+      </div>
+
+    <a id="return" href="/">Back to Input</a>
   </body>
+
    <footer>
     <p><small><strong>Please Note: The estimates above apply to full-time, first-time degree/certificate-seeking undergraduate students only. Please Note: The estimates above apply to full-time, 
       first time degree seeking undergraduate students only. Tuition and fee estimates are based on 15 or more units per semester.

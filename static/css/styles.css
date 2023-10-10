@@ -8,7 +8,20 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
 }
-footer {
-  position: fixed;
-  bottom: 0;
+#resources {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  margin: 25px;
+  color: white;
+  
+}
+a {
+  
+  color: white;
+  transition: all 0.2s ease-in-out;
+}
+a:hover {
+  color: yellow;
+  transform: scale(1.3);
 }

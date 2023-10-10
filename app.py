@@ -29,5 +29,9 @@ def add():
 def result(result):
     return render_template('result.html', result=result)
 
+@app.route('/resources')
+def resources():
+    return render_template('resources.html',methods=['POST'])
+
 if __name__ == '__main__':
     app.run(debug=True)

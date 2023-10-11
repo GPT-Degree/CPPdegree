@@ -7,6 +7,7 @@ footer {
   border: 2px solid black;
   text-align: center; /* Center-align text horizontally */
   padding: 10px; /* Add some padding for spacing */
+  font-size: 20px; /* Increase font-size */
 }
 .header {
   text-align: center;
@@ -14,7 +15,14 @@ footer {
 #return {
   background-color: green; /* Green background color */
   color: white; /* White text color */
-  padding: 10px; /* Add some padding for spacing */
+  padding: 5px; /* Add some padding for spacing */
   width: 200px;
   text-decoration: none;
+  right: 0px;
+}
+#resources {
+  position: absolute;
+  right: 0px;
+  margin: 25px;
+  color: black;
 }

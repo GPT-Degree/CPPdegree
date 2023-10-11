@@ -15,7 +15,7 @@ def add():
         num4 = int(request.form['credits']) #credits section
         
        
-        result = (num3+ num4) - (num1 + num2)
+        result = (num3 + num4 + 1800 ) - (num1 + num2)
 
         
         return redirect(url_for('result', result=result, num3=num3, num4=num4))

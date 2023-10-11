@@ -33,5 +33,17 @@ def result(result, num3, num4):
 def resources():
     return render_template('resources.html',methods=['POST'])
 
+@app.route('/cpp')
+def cpp():
+    return render_template('cpp.html',methods=['POST'])
+
+@app.route('/csuf')
+def csuf():
+    return render_template('csuf.html',methods=['POST'])
+
+@app.route('/csula')
+def csula():
+    return render_template('csula.html',methods=['POST'])
+
 if __name__ == '__main__':
     app.run(debug=True)

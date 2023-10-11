@@ -1,0 +1,25 @@
+body {
+  background-color: #e5eaf5;
+  background-image: url("/static/csula.jpg");
+  color: white;
+  min-height: 500px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#resources {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  margin: 25px;
+  color: white;
+}
+a {
+  color: white;
+  transition: all 0.2s ease-in-out;
+}
+a:hover {
+  color: yellow;
+  transform: scale(1.3);
+}

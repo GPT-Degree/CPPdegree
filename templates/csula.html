@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CPP Calculator</title>
+    <link rel="stylesheet" href="/static/css/csula.css" />
+  </head>
+
+    <h1 id="header">CSULA</h1>
+    <!-- This links the recourses page -->
+    
+    <h2 id="resources"><a href="/resources">RESOURCES</a></h2>
+   
+    <!-- values that we will subtract from cost -->
+    <div id="add">
+      <form action="/add" method="POST">
+        <label for="num1">Financial aid:</label>
+        <input type="text" id="num1" name="num1" /><br /><br />
+        <label for="num2">Scholarships: </label>
+        <input type="text" id="num2" name="num2" /><br /><br />
+        
+        <!-- housing section -->
+  <label for="housing">Choose your housing</label>
+  <select name="housing" id="housing">
+  <option value="11000">On-campus (Dorms)</option>
+  <option value="12312">Off-campus (Village)</option>
+  <option value="12000">Off-campus (Apartment)</option>
+  <option value="0">N/A</option><br /><br />
+  </select><br /><br />
+
+ <!-- full time or part time -->
+  <label for="credits">How many units?</label>
+  <select name="credits" id="credits">
+  <option value="7440">Full-Time</option>
+  <option value="5584">Part-Time </option>
+</select>
+<br /><br /> 
+
+<!-- add button -->
+<input type="submit" value="Calculate" /> <br /><br />    
+
+ </form>
+    </div>
+  </body>
+ 
+</html>
